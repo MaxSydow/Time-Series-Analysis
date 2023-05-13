@@ -4,7 +4,7 @@ Using a Seasonal ARIMA Model to Predict ISP Revenue
 # Contents  
 [Purpose](#Purpose)
 
-[Method_Justification](#Method Justification)
+[Method_Justification](#Method_Justification)
 
 ## Purpose
 
@@ -12,7 +12,7 @@ At a very high level, the upper-most tiers of leadership including the board of 
 
 An analyst or data scientist may begin their approach to such an insight driven task by asking themselves if there exists any periodic repetetiveness over time for overall revenue. During the first 2 years of operations is there a significant difference in the revenenue for Q2 from the other quarters or seasons? Perhaps a more interesting report would say whether revenue is expected to increase in future months. Crucial decisions regarding investor engagement and top-down reorganization of the company may impinge upon these results.
 
-## Method Justification
+## Method_Justification
 
 In addition to periodic fluctuation in revenue over time there may exist larger upward or downward trends over the 2 year span of available data. A smoothed out pattern of mean revenue could be plotted to help visualize this if that were the case. On the other hand, too much fluctuation on a smaller scale may indicate noise which could impeede efforts to make predictions. A machine learning model may place too much emphasis on this noise and result in overfitting on test data. A transformation to mitigate larger trends can ensure stationarity of time series data, while spectral decomposition can aid with reducing random noise. All these factors should be considered when building a predictive time series model.
 
