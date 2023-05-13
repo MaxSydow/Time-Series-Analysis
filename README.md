@@ -33,4 +33,10 @@ When AR and MA are combined the equations is:
 Yt = (B1 + B2) + (M1Y(t-1) + ... + MpY(t-p)) + (w1E(t-1) + w2E(t-2) + ... + wqE(t-q) + Et)
 
 
+Another important feature of a time series to consider is the behavior of means and standard deviations within lagged intervals.  One way that means may differ is if there are seasonal trends in the data.  While the means within fall and winter months may not differ too much, the larger fall and winter means might.  This indicates seasonality within the time series.  Distributions amongnst intervals may also exist, which would indicate the MA error term is not constant.  For a time series to be stationary the means and standard deviations of lagged samples need to be constant, and there should be no seasonality.
+
+An Integrated ARMA (ARIMA) model mitigates moving means.  This can be accomplished by taking the difference of successive lagged intervals, or perhaps using a log or other form of transform.  Before ensuring the stationarity assumption and performing any transformation, it is imperitive to check for any missing values and deal with outliers.
+
+
+
 
