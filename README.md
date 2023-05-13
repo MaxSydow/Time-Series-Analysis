@@ -3,6 +3,7 @@ Using a Seasonal ARIMA Model to Predict ISP Revenue
 
 # Contents  
 [Purpose](#Purpose)
+
 [Method Justification](#Method Justification)
 
 ## Purpose
